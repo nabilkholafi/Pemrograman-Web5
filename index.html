@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portofolio Pribadi - Muhammad Nabil Kholafi</title>
+</head>
+<body>
+    <!-- Header dengan Judul dan Navigasi -->
+    <header>
+        <h1>Portofolio Pribadi</h1>
+        <nav>
+            <a href="#about">Tentang Saya</a> |
+            <a href="#multimedia">Multimedia</a> |
+            <a href="#projects">Proyek</a> |
+            <a href="#contact">Kontak</a> |
+            <a href="#guestbook">Buku Tamu</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Bagian Tentang Saya -->
+        <section id="about">
+            <h2>Tentang Saya</h2>
+            <div class="content-wrapper">
+                <img src="Gambar/Fotoku.jpg" alt="Foto Profil">
+                <div class="text-content">
+                    <h3>Selamat Datang di Portofolio Saya!</h3>
+                    <p>Hallo! Perkenalkan, nama saya Muhammad Nabil Kholafi, seorang mahasiswa semester 4 program studi Sistem Informasi di Universitas Internasional Semen Indonesia. Saat ini, saya sedang menempuh mata kuliah Pemrograman Web dimana saya belajar tentang HTML, CSS, JavaScript, dan berbagai framework modern. Saya sedang belajar HTML dan ini adalah halaman portofolio sederhana saya.</p>
+                    
+                    <div class="skills-hobbies">
+                        <div>
+                            <h3>Keahlian Saya:</h3>
+                            <ul>
+                                <li>UI/UX designer</li>
+                                <li>Web developer</li>
+                                <li>Cyber security analyst</li>
+                                <li>System analyst</li>
+                                <li>ERP consultant</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>Hobi Saya:</h3>
+                            <ul>
+                                <li>Sepak bola</li>
+                                <li>Bulutangkis</li>
+                                <li>Menonton film</li>
+                                <li>Mendengarkan musik</li>
+                                <li>Fotografi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Multimedia -->
+        <section id="multimedia">
+            <h2>Multimedia</h2>
+            <video width="400" controls>
+                <source src="Video/Yakin.. Segitu aja..__ (Inspirasi Kecil).mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <p>
+                Video courtesy of 
+                <a href="https://youtu.be/F80S5nWrGqE?si=UZjdAobpb4E6fIRl" target="_blank">Yakin.. Segitu aja..?" (Inspirasi Kecil)</a>.
+            </p>
+            <audio controls>
+                <source src="Audio/town-10169.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <!-- Bagian Proyek -->
+        <section id="projects">
+            <h2>Proyek Saya</h2>
+            <article>
+                <h3>Proyek 1</h3>
+                <img src="Gambar/Karya 1.png" alt="Proyek 1">
+                <p>Treknesia membantu pendaki menghadapi tantangan komunikasi darurat, navigasi, dan pelaporan kondisi di area pendakian terpencil. Aplikasi ini memastikan keamanan dan kenyamanan pendaki dengan menyediakan fitur peta offline, pelaporan darurat, pelacakan lokasi, dan komunitas pendaki dalam satu platform.</p>
+                <a href="https://www.figma.com/design/hITXOZcUFKVms9MPjcavb7/UI-TRACKNESIA?node-id=0-1&t=PnIsyVoUq4jS4FGo-1">Lihat Proyek</a>
+            </article>
+            <article>
+                <h3>Proyek 2</h3>
+                <img src="Gambar/Karya 2.png" alt="Proyek 2">
+                <p>Aplikasi manajemen inventaris dan penjualan Ramli Collection.</p>
+                <a href="https://www.figma.com/design/2MWRKo6m8mWrGKc7NAVzLa/Ramli-Collection?node-id=0-1&t=FcLp0oBNbKOs6Moj-1">Lihat Proyek</a>
+            </article>
+        </section>
+
+        <!-- Bagian Kontak -->
+        <section id="contact">
+            <h2>Hubungi Saya</h2>
+            <p>Silakan isi formulir di bawah ini untuk menghubungi saya atau kirim email langsung ke <a href="mailto:muhammad.kholafi23@student.uisi.ac.id">muhammad.kholafi23@student.uisi.ac.id</a></p>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><h3>Formulir Kontak</h3></legend>
+                    <div>
+                        <label for="contactName">Nama:</label>
+                        <input type="text" id="contactName" name="name" required>
+                    </div>
+                    <div>
+                        <label for="contactEmail">Email:</label>
+                        <input type="email" id="contactEmail" name="email" required>
+                    </div>
+                    <div>
+                        <label for="subject">Subjek:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div>
+                        <label for="contactMessage">Pesan:</label>
+                        <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Kirim Pesan</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <!-- Bagian Buku Tamu -->
+        <section id="guestbook">
+            <h2>Buku Tamu</h2>
+            <p>Silakan isi buku tamu di bawah ini</p>
+            <form id="guestForm" action="#" method="post">
+                <fieldset>
+                    <legend><h3>Buku Tamu</h3></legend>
+                    <div>
+                        <label for="guestName">Nama:</label>
+                        <input type="text" id="guestName" name="name" required>
+                    </div>
+                    <div>
+                        <label for="address">Alamat:</label>
+                        <input type="text" id="address" name="address" required>
+                    </div>
+                    <div>
+                        <label for="guestMessage">Pesan:</label>
+                        <textarea id="guestMessage" name="message" rows="5" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Tambah Tamu</button>
+                    </div>
+                </fieldset>
+            </form>
+            
+            <!-- Container untuk menampilkan daftar tamu -->
+            <div class="guest-list">
+                <h3>Daftar Tamu</h3>
+                <div id="guestItems"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 | Portofolio Pribadi - Muhammad Nabil Kholafi</p>
+        <address>
+            Kontak: <a href="mailto:muhammad.kholafi23@student.uisi.ac.id">muhammad.kholafi23@student.uisi.ac.id</a><br>
+            Telepon: (+62) 821-4218-9551<br>
+            Gresik, Indonesia
+        </address>
+        <p>Temukan saya di:</p>
+        <a href="https://www.linkedin.com/in/muhammad-nabil-kholafi/">LinkedIn</a> |
+        <a href="https://github.com/nabilkholafi">GitHub</a> |
+        <a href="https://www.instagram.com/nablkh_/">Instagram</a>
+    </footer>
+</body>
+</html>
